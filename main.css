@@ -48,14 +48,8 @@ table {
   border-spacing: 0;
 }
 
-:root {
-  --black: rgb(0,0,0);
-  --hover: rgb(0, 0, 0);
-  --button-hover:rgb(248, 234, 193);
-  --header:rgb(155, 194, 185);
-  --body:rgb(255, 249, 231);
-  --card: rgb(255, 241, 200);
-  --footer:rgb(100, 177, 166);
+body {
+  font-family: "Nunito", sans-serif;
 }
 
 *, *::before, *::after {
@@ -63,8 +57,8 @@ table {
 }
 
 body {
-  background-color: var(--body);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #8787eb;
+  color: white;
 }
 
 wrapper {
@@ -106,7 +100,7 @@ wrapper > * {
   flex: 1;
   text-align: center;
   margin: 0 auto;
-  background-color: var(--card);
+  background-color: #b4b4e4;
   width: 60vw;
   border-radius: 20px;
   font-size: 30px;
@@ -131,11 +125,7 @@ ul > * {
 
 a {
   text-decoration: none;
-  color: var(--black);
-}
-
-a:hover {
-  color: var(--hover);
+  color: white;
 }
 
 a:active {
@@ -143,7 +133,7 @@ a:active {
 }
 
 .button:hover {
-  background-color: var(--button-hover);
+  background-color: #b4b4e4;
 }
 
 /*# sourceMappingURL=main.css.map */
