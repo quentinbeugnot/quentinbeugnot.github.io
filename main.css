@@ -81,8 +81,17 @@ body {
   justify-content: center;
 }
 
+.title {
+  border: solid 5px rgba(255, 255, 255, 0.3);
+}
+
+.contact {
+  border: solid 5px rgba(255, 255, 255, 0.3);
+}
+
 .card {
   text-align: center;
+  padding: 0 20px;
 }
 
 .card:hover {
@@ -91,44 +100,77 @@ body {
 
 .box1 {
   background-color: #ffd373;
-  border-radius: 20px;
+  border-radius: 10px;
   grid-column: 3/6;
 }
 
 .box2 {
-  background-color: #f3e3ae;
-  border-radius: 20px;
+  background-color: #f1995e;
+  border-radius: 10px;
   grid-column: 6/8;
+}
+
+.box2:hover {
+  grid-column: 6/9;
+}
+
+.box2:hover p::after {
+  content: "'Cause he wakes up in the morning, and he goes to work at 9...";
+}
+
+.box2 p::after {
+  content: "About the man";
 }
 
 .box3 {
   background-color: #f1c35e;
-  border-radius: 20px;
+  border-radius: 10px;
   grid-column: 2/7;
 }
 
 .box4 {
   background-color: #f0da94;
-  border-radius: 20px;
+  border-radius: 10px;
   grid-column: 7/10;
+}
+
+.box4:hover p::after {
+  content: "Here's a FM Synth that you can play in the browser. Click to try it out";
+}
+
+.box4 p::after {
+  content: "FM Syntheziser";
 }
 
 .box5 {
   background-color: #f1a55e;
-  border-radius: 20px;
+  border-radius: 10px;
   grid-column: 4/6;
 }
 
 .box6 {
   background-color: #f1b65e;
-  border-radius: 20px;
+  border-radius: 10px;
   grid-column: 6/8;
 }
 
 .box7 {
   background-color: #f8d094;
-  border-radius: 20px;
+  border-radius: 10px;
   grid-column: 8/9;
+}
+
+.box7:hover {
+  grid-column: 8/10;
+  grid-row: 4/6;
+}
+
+.box7 p::after {
+  content: "Contact";
+}
+
+.box7:hover p::after {
+  content: "You can reach me here and here and here";
 }
 
 /*# sourceMappingURL=main.css.map */

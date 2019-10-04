@@ -30,8 +30,17 @@ body {
     // border: solid 1px red;
 }
 
+.title {
+    border: solid 5px rgba(255, 255, 255, 0.3);
+}
+
+.contact {
+    border: solid 5px rgba(255, 255, 255, 0.3);
+}
+
 .card {
     text-align: center;
+    padding: 0 20px;
 }
 
 .card:hover {
@@ -40,43 +49,76 @@ body {
 
 .box1 {
     background-color: $box1;
-    border-radius: 20px;
+    border-radius: $radius;
 
     grid-column: 3 / 6;
 }
 
 .box2 {
     background-color: $box2;
-    border-radius: 20px;
+    border-radius: $radius;
     grid-column: 6 / 8;
+}
+
+.box2:hover {
+    grid-column: 6 / 9;
+}
+
+.box2:hover p::after {
+    content: "'Cause he wakes up in the morning, and he goes to work at 9...";
+}
+
+.box2 p::after {
+    content: "About the man";
 }
 
 .box3 {
     background-color: $box3;
-    border-radius: 20px;
+    border-radius: $radius;
     grid-column: 2 / 7;
 }
 
 .box4 {
     background-color: $box4;
-    border-radius: 20px;
+    border-radius: $radius;
     grid-column: 7 / 10;
+}
+
+.box4:hover p::after{
+    content: "Here's a FM Synth that you can play in the browser. Click to try it out"
+}
+
+.box4 p::after{
+    content: "FM Syntheziser"
 }
 
 .box5 {
     background-color: $box5;
-    border-radius: 20px;
+    border-radius: $radius;
     grid-column: 4 / 6;
 }
 
 .box6 {
     background-color: $box6;
-    border-radius: 20px;
+    border-radius: $radius;
     grid-column: 6 / 8;
 }
 
 .box7 {
     background-color: $box7;
-    border-radius: 20px;
+    border-radius: $radius;
     grid-column: 8 / 9;
+}
+
+.box7:hover {
+    grid-column: 8 / 10;
+    grid-row: 4 / 6;
+}
+
+.box7 p::after {
+    content: "Contact"
+}
+
+.box7:hover p::after {
+    content: "You can reach me here and here and here"
 }
