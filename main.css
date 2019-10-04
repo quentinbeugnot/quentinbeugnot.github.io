@@ -49,7 +49,12 @@ table {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 40px;
 }
 
 *, *::before, *::after {
@@ -57,83 +62,73 @@ body {
 }
 
 body {
-  background-color: #8787eb;
+  background-color: #8da9e7;
   color: white;
 }
 
-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
   height: 100vh;
-  /* border: 5px solid red; */
 }
 
-.container-inner-column {
+.grid-main > * {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.container-inner-row {
-  display: flex;
-  flex-direction: row;
-  /* align-items: flex-start;
-  justify-content: center; */
-}
-
-wrapper > * {
-  padding: 20px;
-  /* border: 5px solid red; */
-}
-
-.flex-1 {
-  /* background-color: var(--header); */
-  font-size: 20px;
-  height: 20vh;
-  /* border: 3px solid red; */
-}
-
-.flex-2 {
-  flex: 1;
+.card {
   text-align: center;
-  margin: 0 auto;
-  background-color: #b4b4e4;
-  width: 60vw;
+}
+
+.card:hover {
+  background-color: #7190d4;
+}
+
+.box1 {
+  background-color: #ffd373;
   border-radius: 20px;
-  font-size: 30px;
-  line-height: 50px;
-  /* border: 5px solid yellow; */
+  grid-column: 3/6;
 }
 
-.flex-3 {
-  height: 20vh;
+.box2 {
+  background-color: #f3e3ae;
+  border-radius: 20px;
+  grid-column: 6/8;
 }
 
-ul {
-  display: flex;
+.box3 {
+  background-color: #f1c35e;
+  border-radius: 20px;
+  grid-column: 2/7;
 }
 
-ul > * {
-  width: 15vw;
-  text-align: center;
-  margin: 0;
-  /* border: 5px solid red; */
+.box4 {
+  background-color: #f0da94;
+  border-radius: 20px;
+  grid-column: 7/10;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+.box5 {
+  background-color: #f1a55e;
+  border-radius: 20px;
+  grid-column: 4/6;
 }
 
-a:active {
-  outline: none;
+.box6 {
+  background-color: #f1b65e;
+  border-radius: 20px;
+  grid-column: 6/8;
 }
 
-.button:hover {
-  background-color: #b4b4e4;
+.box7 {
+  background-color: #f8d094;
+  border-radius: 20px;
+  grid-column: 8/9;
 }
 
 /*# sourceMappingURL=main.css.map */

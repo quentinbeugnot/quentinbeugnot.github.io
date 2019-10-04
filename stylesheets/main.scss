@@ -1,8 +1,11 @@
+@import "modules/colors";
+@import "modules/utility";
 @import "partials/reset";
 @import "partials/typography";
-@import "modules/colors";
 @import "partials/buttons";
-@import "modules/utility";
+@import "partials/flex";
+@import "partials/grid";
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -13,87 +16,67 @@ body {
     color: $font;
 }
 
-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.grid-main {
+    @include grid;
     height: 100vh;
 
-    /* border: 5px solid red; */
+    // border: solid 1px red;
+
 }
 
-.container-inner-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.grid-main > *{
+    @include flex;
+
+    // border: solid 1px red;
 }
 
-.container-inner-row {
-    display: flex;
-    flex-direction: row;
-    /* align-items: flex-start;
-    justify-content: center; */
-}
-
-wrapper > * {
-    padding: 20px;
-
-    /* border: 5px solid red; */
-}
-
-.flex-1 {
-    /* background-color: var(--header); */
-    font-size: 20px;
-    height: 20vh;
-
-    /* border: 3px solid red; */
-}
-
-.flex-2 {
-    flex: 1;
+.card {
     text-align: center;
-    margin: 0 auto;
-    background-color: $card;
-    width: 60vw;
+}
+
+.card:hover {
+    background-color: $cardHover;
+}
+
+.box1 {
+    background-color: $box1;
     border-radius: 20px;
-    font-size: 30px;
-    line-height: 50px;
 
-    /* border: 5px solid yellow; */
+    grid-column: 3 / 6;
 }
 
-.flex-3 {
-    height: 20vh;
+.box2 {
+    background-color: $box2;
+    border-radius: 20px;
+    grid-column: 6 / 8;
 }
 
-ul {
-    display: flex;
-
+.box3 {
+    background-color: $box3;
+    border-radius: 20px;
+    grid-column: 2 / 7;
 }
 
-ul > * {
-    width: 15vw;
-    text-align: center;
-    margin: 0;
-
-    /* border: 5px solid red; */
+.box4 {
+    background-color: $box4;
+    border-radius: 20px;
+    grid-column: 7 / 10;
 }
 
-a {
-    text-decoration: none;
-    color: $font;
+.box5 {
+    background-color: $box5;
+    border-radius: 20px;
+    grid-column: 4 / 6;
 }
 
-a:hover {
-    // color: $linkHover;
+.box6 {
+    background-color: $box6;
+    border-radius: 20px;
+    grid-column: 6 / 8;
 }
 
-a:active {
-    outline: none
-}
-
-.button:hover {
-    background-color: $card;
+.box7 {
+    background-color: $box7;
+    border-radius: 20px;
+    grid-column: 8 / 9;
 }
