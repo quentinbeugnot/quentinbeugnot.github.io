@@ -62,7 +62,7 @@ body {
 }
 
 body {
-  background-color: #8da9e7;
+  background: #FC4A14;
   color: white;
 }
 
@@ -95,17 +95,17 @@ body {
 }
 
 .card:hover {
-  background-color: #7190d4;
+  background-color: #3ea394;
 }
 
 .box1 {
-  background-color: #ffd373;
+  background-color: #4ABDAC;
   border-radius: 10px;
   grid-column: 3/6;
 }
 
 .box2 {
-  background-color: #f1995e;
+  background-color: #F7B733;
   border-radius: 10px;
   grid-column: 6/8;
 }
@@ -123,13 +123,13 @@ body {
 }
 
 .box3 {
-  background-color: #f1c35e;
+  background-color: #f7a933;
   border-radius: 10px;
   grid-column: 2/7;
 }
 
 .box4 {
-  background-color: #f0da94;
+  background-color: #f7c333;
   border-radius: 10px;
   grid-column: 7/10;
 }
@@ -143,19 +143,19 @@ body {
 }
 
 .box5 {
-  background-color: #f1a55e;
+  background-color: #f7c333;
   border-radius: 10px;
   grid-column: 4/6;
 }
 
 .box6 {
-  background-color: #f1b65e;
+  background-color: #f7a933;
   border-radius: 10px;
   grid-column: 6/8;
 }
 
 .box7 {
-  background-color: #f8d094;
+  background-color: #F7B733;
   border-radius: 10px;
   grid-column: 8/9;
 }
